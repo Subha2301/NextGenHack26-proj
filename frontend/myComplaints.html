@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Complaints</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>FixMyCity</h2>
+  <div>
+    <a href="submit.html">Submit New</a>
+    <a href="index.html">Logout</a>
+  </div>
+</nav>
+
+<div class="dashboard">
+  <h2>My Complaints</h2>
+  <input type="text" id="searchInput" placeholder="Search complaints by title..." />
+  <div class="status-filters">
+  <span data-status="" class="filter-link active">All</span>
+  <span data-status="PENDING" class="filter-link">Pending</span>
+  <span data-status="IN-PROGRESS" class="filter-link">In-Progress</span>
+  <span data-status="RESOLVED" class="filter-link">Resolved</span>
+  </div>
+  <div id="complaintsContainer"></div>
+</div>
+
+<script src="js/complaints.js"></script>
+</body>
+</html>

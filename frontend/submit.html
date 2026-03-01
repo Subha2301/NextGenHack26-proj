@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Complaint</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>FixMyCity</h2>
+  <div>
+    <a href="myComplaints.html">My Complaints</a>
+    <a href="index.html">Logout</a>
+  </div>
+</nav>
+
+<div class="form-container">
+  <h2>Submit Complaint</h2>
+  <form id="complaintForm" enctype="multipart/form-data">
+    <input type="text" id="title" placeholder="Complaint Title" required>
+    <textarea id="description" placeholder="Describe your issue..." required></textarea>
+    <label for="image">Upload Image: </label>
+    <input type="file" id="image" accept="image/*" required>
+    <label for="location">Location:</label>
+<input type="text" id="location" placeholder="Enter location of the problem" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<script src="js/submit.js"></script>
+</body>
+</html>
